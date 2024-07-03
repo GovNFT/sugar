@@ -10,7 +10,7 @@ jobs:
     - uses: actions/checkout@master
 
     - name: Builds the Docker image
-      run: docker build ./ -t velodrome/sugar
+      run: docker build ./ -t govnft/sugar
 
     - name: Runs code QA and tests
-      run: docker run --rm --env-file=env.example -v $(pwd):/app -w /app -t velodrome/sugar sh -c 'flake8 && brownie test --network=optimism-main'
+      run: docker run --rm --env-file=env.example -v $(pwd):/app -w /app -t govnft/sugar sh -c 'flake8 && brownie test --network=optimism-main'
