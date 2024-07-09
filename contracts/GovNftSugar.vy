@@ -98,7 +98,7 @@ def collections() -> DynArray[Collection, MAX_COLLECTIONS]:
   for index in range(0, MAX_COLLECTIONS):
     if index >= len(implementations):
       break
-    
+
     nft: IGovNFT = IGovNFT(implementations[index])
 
     collections.append(
@@ -129,7 +129,7 @@ def _owned(_account: address, _collection: address) -> DynArray[GovNft, MAX_RESU
   @return Array of GovNft structs
   """
   govnfts: DynArray[GovNft, MAX_RESULTS] = empty(DynArray[GovNft, MAX_RESULTS])
-  
+
   nft: IGovNFT = IGovNFT(_collection)
   govnft_balance: uint256 = nft.balanceOf(_account)
 

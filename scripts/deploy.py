@@ -5,8 +5,6 @@ from brownie import accounts, GovNftSugar
 
 
 def main():
-    contract_name = str(os.getenv('CONTRACT')).lower()
-
     if os.getenv('PROD'):
         account = accounts.load('sugar')
     else:
