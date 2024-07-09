@@ -1,4 +1,3 @@
-# SPDX-License-Identifier: BUSL-1.1
 # @version ^0.3.10
 
 # @title GovNFT Sugar
