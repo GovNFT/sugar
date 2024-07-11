@@ -25,7 +25,7 @@ Below is the list of data we support.
 
 ### GovNFT Data
 
-`GovNFTSugar.vy` is deployed at `0xAa43fE76EcA8191e68A0aBc33D57474C6Ca69Fe8`
+`GovNFTSugar.vy` is deployed at `0xB3e2C137A3a6f680A0D1f78DaA563689A61d7f80`
 
 It allows fetching GovNFT data.
 The returned data/struct of type `GovNft` values represent:
