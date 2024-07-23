@@ -224,7 +224,7 @@ def _raw_call_delegates(_token: address, _account: address) -> address:
   @param _token The token to call
   @param _account The account to check the delegation of
   """
-  if self._raw_call(_token, concat(method_id("delegates()"), convert(_account, bytes32))):
+  if self._raw_call(_token, concat(method_id("delegates(address)"), convert(_account, bytes32))):
     return IToken(_token).delegates(_account)
   return empty(address)
 
